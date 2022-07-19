@@ -1,20 +1,20 @@
 ---
 layout: workshop
 root: .
-eventtitle: "Carpentries Bootcamp: Intro. to Python and Version Control w/ Git" # enter name of the event here
+eventtitle: "Carpentries Bootcamp: Python, Unix Shell, & Git" # enter name of the event here
 venue: "UC San Diego"      # brief name of host site without address (e.g., "Euphoric State University")
-address: "Virtual (via Zoom)"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+address: "Event Room (G1E), Geisel Library, 9500 Gilman Drive, La Jolla, CA"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "us"    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "null"     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "June 6-9, 2022"  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "1:00-4:00pm PT"  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: "2022-06-06"  # use YYYY-MM-DD format like "2015-01-01"
-enddate: "2022-06-09"  # use YYYY-MM-DD format like" 2015-01-02"
+humandate: "August 1-4, 2022"  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:00am - 12:00pm PT"  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: "2022-08-01"  # use YYYY-MM-DD format like "2015-01-01"
+enddate: "2022-08-04"  # use YYYY-MM-DD format like" 2015-01-02"
 days: null
-instructor: ["Kimberly Thomas", "Saulo Muller Soares", "David Palmquist"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Kimberly Thomas", "David Palmquist", "Reid Otsuji", "Christina Agu"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "kkt008@ucsd.edu or rotsuji@ucsd.edu "    # contact email address for workshop organizer, such as "grace@hopper.org"
+instructor: ["Wout Bittremieux", "Kimberly Thomas"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Kimberly Thomas", "Eastern Kang"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "kkt008@ucsd.edu or rotsuji@ucsd.edu"    # contact email address for workshop organizer, such as "grace@hopper.org"
 <!-- etherpad: "" # optional (insert the URL for your Etherpad if you're using one) -->
 ---
 <!--
@@ -119,12 +119,12 @@ contact: "kkt008@ucsd.edu or rotsuji@ucsd.edu "    # contact email address for w
 
 <p id="certificate">
 <strong>Assessment</strong>:
-A Co-Curricular of Record activity recognition will be given to the student who:
+A Co-Curricular of Record activity recognition may be requested for the student who:
 </p>
 
 <ul>
-<li>Attend and participate in all sessions</li>
-<li>Pass all workshop quizzes</li>
+<li>Attends and participates in all sessions</li>
+<li>Passes post-workshop quiz</li>
 </ul>
 <p>
 For more information on the UC San Diego Co-Curricular of Record (CCR), please visit the <a href="https://elt.ucsd.edu/ccr/index.html">UCSD Engaged Learning Tools Co-Curricular Record page</a>.
@@ -151,9 +151,10 @@ Everyone who participates in Carpentries activities is required to conform to th
 
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<!--
+    <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-
+-->
 <hr/>
 
 <!--
@@ -171,7 +172,7 @@ Everyone who participates in Carpentries activities is required to conform to th
       <tr><td>June 7</td><td>Introduction to Python - Session 2</td><td> Libraries, Writing Functions, Reading/Writing data in Dataframes, and Pandas Dataframes</td></tr>
       <tr><td>June 8</td><td>Introduction to Python - Session 3</td><td> Plotting, Lists, For Loops, Looping over Datasets, and Conditionals </td></tr>
       <tr><td></td><td>Quiz</td><td> Due next session; posted on Canvas</td></tr>
-      <tr><td>June 8</td><td>Version Control with Git</td><td>Introduction to Git, Creating a Repository, Tracking Changes, and Collaborating</td></tr>
+      <tr><td>June 8</td><td>Unix Shell & Version Control w/ Git</td><td> Unix Shell: Introduction, Navigating the file system, & working with files & directories <br> Git: Introduction, Creating a Repository, Tracking Changes, and Collaborating</td></tr>
      </tbody></table>   
   </div>
 </div>
@@ -193,7 +194,7 @@ Everyone who participates in Carpentries activities is required to conform to th
 <h2 id="curriculum">Curriculum</h2>
 <!-- Python specific data information begins -->
 <p id = "curriculum">
-For this workshop we will be referencing the <a href="http://swcarpentry.github.io/python-novice-gapminder/">Plotting and Programming in Python</a> and <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a> Carpentries curricula. 
+For this workshop we will be referencing the <a href="http://swcarpentry.github.io/python-novice-gapminder/">Plotting and Programming in Python</a>, <a href="https://librarycarpentry.org/lc-shell/">The UNIX Shell</a>, and <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a> Carpentries curricula. 
 </p>
 
 <h2 id="datasect">Data</h2>
@@ -308,6 +309,12 @@ We will use <a href="https://hackmd.io/@kkt008/SkEHYdI_q">HackMD collaborative n
 </div>
 
 <!-- End of 'Python' section. -->
+
+<!-- Start of Unix Shell section. -->
+
+
+
+<!-- End of Unix Shell section. -->
 
 <!-- Start of Git section. -->
 <div id="git">
